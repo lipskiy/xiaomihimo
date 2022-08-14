@@ -6,6 +6,7 @@
 
 ul {
    margin: 0;
+   padding: 0;
    list-style: none;
 }
 
@@ -202,3 +203,23 @@ body {
 .info__item-text {
    max-width: 450px;
 }
+
+.characteristics {
+   margin-bottom: 150px;
+}
+
+.characteristics__title {
+   margin: 0 0 40px;
+   font-size: 16px;
+   line-height: 19px;
+   text-transform: uppercase;
+}
+
+.characteristics__inner {
+   display: flex;
+}
+
+.characteristics__img {
+   align-self: center;
+}
+
