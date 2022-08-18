@@ -4,6 +4,11 @@
    box-sizing: border-box;
 }
 
+/* html {
+   scroll-behavior: smooth;
+} */ 
+/* способ скролла, но остается идентификатор в строке url*/
+
 ul {
    margin: 0;
    padding: 0;
@@ -67,7 +72,7 @@ p {
 }
 
 .bike {
-   padding: 100px 0 150px;
+   padding: 100px 0 0px;
 }
 
 .bike__inner {
@@ -111,11 +116,11 @@ p {
    font-size: 20px;
    line-height: 24px;
    letter-spacing: 1.1em;
+   transition: all .3s;
 }
 
 .bike__link:hover {
    background-color: #FF4040;
-   transition: all .3s;
 }
 
 .bike__slider .slick-dots {
@@ -176,7 +181,8 @@ p {
 }
 
 .info {
-   margin-bottom: 150px;
+   padding-top: 150px;
+   margin-bottom: 50px;
 }
 
 .info__inner {
@@ -209,6 +215,7 @@ p {
 }
 
 .characteristics {
+   padding-top: 100px;
    margin-bottom: 150px;
 }
 
@@ -400,9 +407,54 @@ p {
    line-height: 24px;
    letter-spacing: 1.1em;  
    cursor: pointer;
+   transition: all .3s;
 }
 
 .form__btn:hover {
    background-color: #FF4040;
-   transition: all .3s;
+}
+
+.footer {
+   background-color:#131313;
+}
+
+.footer__inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100px;
+}
+
+.footer__link {
+   color: #ffff;
+   text-decoration: underline;
+   font-style: 12px;
+   line-height: 15px;
+}
+
+.footer__social-link +.footer__social-link {
+   margin-left: 26px;
+}
+
+.footer__social-img {
+   cursor: pointer;
+}
+
+.footer__contacts {
+   color: #ffff;
+   font-style: 12px;
+   line-height: 15px;
+}
+
+.footer__contacts-link {
+   display: flex;
+   align-items: center;
+}
+
+.footer__contacts-link +.footer__contacts-link {
+   margin-top: 10px;
+}
+
+.footer__contacts-img {
+   margin-right: 10px;
 }
