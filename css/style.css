@@ -27,6 +27,10 @@ body {
    color: #131313;
 }
 
+p {
+   margin: 0;
+}
+
 .container {
    max-width: 1220px;
    margin: 0 auto;
@@ -208,7 +212,7 @@ body {
    margin-bottom: 150px;
 }
 
-.characteristics__title {
+.characteristics__headtitle {
    margin: 0 0 40px;
    font-size: 16px;
    line-height: 19px;
@@ -223,3 +227,33 @@ body {
    align-self: center;
 }
 
+.characteristics__items {
+   flex-basis: 570px;
+   margin-right: 60px;
+}
+
+.characteristics__list + .characteristics__list {
+   padding-top: 30px;
+}
+
+.characteristics__title {
+   background: #131313;
+   color: #ffff;
+   text-transform: uppercase;
+   padding: 2px 0 3px;
+   font-weight: 700;
+}
+
+.characteristics_line {
+   display: flex;
+   padding-top: 5px;
+}
+
+.characteristics__name {
+   flex-basis: 285px;
+   padding-right: 25px;
+}
+
+.characteristics__descr {
+   flex-basis: 285px;
+}
